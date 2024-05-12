@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calculadora</title>
+<link rel="stylesheet" href="Cal.css">
+</head>
+<body>
+  <div class="background-with-text">
+    <h2 style="text-align: center; font-family: monospace; margin-bottom: 20px;">Bienvenido a la</h2>
+    <h1 style="text-align: center; font-family: monospace; margin-bottom: 50px;">Calculadora Online</h1>
+  </div>
+  <div class="fondoglobal">
+    <div class="calculator">
+      <!-- Pantalla de la calculadora -->
+      <input type="text" class="screen" id="screen" readonly>
+      <!-- Botones de la calculadora -->
+      <div class="buttons">
+        <button onclick="clearScreen()">C</button>
+        <button onclick="appendInput('/')">/</button>
+        <button onclick="appendInput('*')">*</button>
+        <button onclick="appendInput('+')">+</button>
+        <button onclick="appendInput('-')">-</button>
+        <button onclick="appendInput('.')">.</button>
+        <button onclick="appendInput('9')">9</button>
+        <button onclick="appendInput('8')">8</button>
+        <button onclick="appendInput('7')">7</button>
+        <button onclick="appendInput('6')">6</button>
+        <button onclick="appendInput('5')">5</button>
+        <button onclick="appendInput('4')">4</button>
+        <button onclick="appendInput('3')">3</button>
+        <button onclick="appendInput('2')">2</button>
+        <button onclick="appendInput('1')">1</button>
+        <button onclick="appendInput('0')">0</button>
+        <button onclick="calculate()">=</button>
+      </div>
+      <!-- Imagen para mostrar después del cálculo -->
+      <img id="resultImage" src="gatillo.gif" alt="Gatillo" style="display: none;justify-self: center; margin-top: 20px; width: 100px; height: 100px;">
+    </div>
+  </div>
+
+  <script src="Cal.js"></script>
+</body>
+</html>
