@@ -1,0 +1,44 @@
+.background-with-text {
+  text-align: center;
+  background-image: url(calcu.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+}
+
+.calculator {
+  width: 300px; /* Ancho fijo para la calculadora */
+  margin: 0 auto; /* Centra horizontalmente */
+  text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra horizontalmente */
+}
+
+.screen {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 5px;
+  font-size: 24px; /* Ajusta el tamaño del texto */
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+button {
+  padding: 10px;
+  margin: 5px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.fondoglobal {
+  background-image: url(calcu.jpg);
+  background-size: cover; /* Modificado a cover */
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
